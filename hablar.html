@@ -1,0 +1,294 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Hablar</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="hablar.css"/>
+
+    
+    
+<body onload="identificar();">
+    
+<script type="text/javascript">  
+    
+    
+    function preguntar(){
+   bool=confirm("¿Deseas salir, y por tanto dejar de hablar con poliglot?");
+   if (bool){
+   
+     window.location = "index.html";
+   }
+}
+    function preguntar1(){
+   bool=confirm("¿Deseas leer la ayuda ?");
+   if (bool){
+   
+     window.location = "ayuda.html";
+   }
+}
+    function preguntar2(){
+   bool=confirm("¿Deseas contactar con nosotros?");
+   if (bool){
+   
+     window.location = "contacta.html";
+   }
+}
+    
+    function identificar() {
+        var URLactual = window.window.location.search.substring(1);
+               
+        switch(URLactual[0]){
+        
+            case "1":
+            document.getElementById("feedback1").innerHTML="Bienvenido Juan, elige un idioma para comenzar ...";
+           break;
+            case "2":
+            document.getElementById("feedback1").innerHTML="Bienvenida Maria, elige un idioma para comenzar ...";
+           break;
+            case "3":
+            document.getElementById("feedback1").innerHTML="Bienvenido Alex, elige un idioma para comenzar ...";
+           break;
+            case "4":
+            document.getElementById("feedback1").innerHTML="Bienvenido Alex, elige un idioma para comenzar ...";
+           break;
+            case "5":
+            document.getElementById("feedback1").innerHTML="Bienvenido Rayan, elige un idioma para comenzar ...";
+           break;
+        }
+        
+    }
+    
+    
+    function pulsado(id) {
+        var texto = "Ya puedes hablar ";
+        var tmp ="";
+ switch(id){
+    case "1":
+        texto +="Alemán";
+        tmp ="Alemán";
+        
+        break;
+    case "2":
+        texto +="Árabe clásico";
+         tmp ="Árabe clásico";
+        break;
+    case "3":
+        texto +="Árabe (Egipto)";
+         tmp ="Árabe Egipto";
+        break;
+    case "4":
+        texto +="Árabe (Malta)";
+         tmp ="Árabe Malta";
+        break;
+    case "5":
+        texto +="Árabe (Marruecos)";
+        tmp ="Árabe Marruecos";
+        break;
+    case "6":
+        texto +="Árabe (Moderno)";
+         tmp ="Árabe Moderno";
+        break;
+    case "7":
+        texto +="Árabe (Siria)";ç
+         tmp ="Árabe Siria";
+        break;
+    case "8":
+        texto +="Árabe (Túnez)";
+         tmp ="Árabe Túnez";
+        break;
+    case "9":
+        texto +="Bengalí (Bangladés)";
+         tmp ="Bengalí Bangladés";
+        break;
+    case "10":
+        texto +="Catalán";
+        tmp ="Catalán";
+        break;
+    case "11":
+        texto +="Chino cantonés";
+        tmp ="Chino cantonés";
+        break;
+    case "12":
+        texto +="Chino jin";
+        tmp ="Chino jin";
+        break;
+    case "13":
+        texto +="Chino mandarín";
+         tmp ="Chino mandarín";
+        break;
+    case "14":
+        texto +="Chino min";
+        tmp ="Chino min";
+        
+        break;
+    case "15":
+        texto +="Chino wú";
+         tmp ="Chino wú";
+        break;
+    case "16":
+        texto +="Chino xiang";
+        tmp ="Chino xiang";
+    break;
+    case "17":
+        texto +="Español (Andalucía)";
+         tmp ="Español Andalucía";
+        break;
+    case "18":
+        texto +="Español (Argentina)";
+         tmp ="Español Argentina";
+        break;
+    case "19":
+        texto +="Español (Canarias)";
+          tmp ="Español Canarias";
+        break;
+    case "20":
+        texto +="Español (Colombia)";
+         tmp ="Español Colombia";
+        break;
+    case "21":
+        texto +="Español (España)";
+         tmp ="Español España";
+        break;
+    case "22":
+        texto +="Español (México)";
+         tmp ="Español México";
+        break;
+    case "23":
+        texto +="Español (Perú)";
+          tmp ="Español Perú";
+        break;
+    case "24":
+        texto +="Español (Venezuela)";
+         tmp ="Español Venezuela";
+        break;
+    case "25":
+        texto +="Euskera";
+          tmp ="Euskera";
+        break;
+    case "26":
+        texto +="Francés";
+         tmp ="Francés";
+        break;
+    case "27":
+        texto +="Gallego";
+         tmp ="Gallego";
+        break;
+    case "28":
+        texto +="Inglés (Australia)";
+         tmp ="Inglés Australia";
+        break;
+    case "29":
+        texto +="Inglés (Finlandia)";
+         tmp ="Inglés Finlandia";
+        break;
+    case "30":
+        texto +="Inglés (U.K)";
+           tmp ="Inglés U.K";
+        break;
+    case "31":
+        texto +="Inglés (U.S.A)";
+         tmp ="Inglés U.S.A";
+        break;
+    case "32":
+        texto +="Un idioma inventado";
+         tmp ="Un idioma inventado";
+        break;
+    case "33":
+        texto +="Italiano";
+         tmp ="Italiano";
+        break;
+    case "34":
+        texto +="Ruso";
+         tmp ="Ruso";
+        break;
+}
+        texto +="<br>Recuerda, para hablarlo debes de pensar: voy a usar "+tmp+". <br> Si quieres dejar de hablarlo piensa: voy a usar mi idioma";
+        if(id!=32){
+        document.getElementById("feedback1").innerHTML="Cargando en tu poliglot ...";
+        setTimeout(function(){document.getElementById("feedback1").innerHTML=texto; }, 2000);
+        }else{
+        document.getElementById("feedback1").innerHTML="Cargando en tu poliglot ...";
+        setTimeout(function(){document.getElementById("feedback1").innerHTML="Junta tu movil con el de tu amigo para sincronizar el idioma"; }, 2000);
+        setTimeout(function(){document.getElementById("feedback1").innerHTML=texto; }, 12000);
+            
+        
+       
+            
+        }
+        
+    }
+   
+    </script>    
+    
+    
+    
+    
+    
+    
+<div class="nav" id="navegador">
+        <ul>
+        <li><a href="#" onclick="preguntar1();">Ayuda</a></li>
+        <li><a href="#" onclick="preguntar2();">Contactar</a></li>
+        <li><a href="#" onclick="preguntar();">Salir</a></li>
+        <li></li>
+        <li class="ultimo"></li>
+        </ul>
+</div>
+    
+<div id="Feedback">
+    
+<h3 id="feedback1"> Elige un idioma para comenzar a hablar ...</h3>    
+    
+    
+</div>    
+    
+    
+ <div id="idiomas">
+ <ul>
+ <li><a href="#" onclick="pulsado('1');"><img src="imagenes/1.png"/> </a></li>
+ <li><a href="#" onclick="pulsado('2');"><img src="imagenes/2.png"/></a></li>
+ <li><a href="#" onclick="pulsado('3');"><img src="imagenes/3.png"/></a></li>
+ <li><a href="#" onclick="pulsado('4');"><img src="imagenes/4.png"/></a></li>  
+ <li><a href="#" onclick="pulsado('5');"><img src="imagenes/5.png"/></a></li>
+ <li><a href="#" onclick="pulsado('6');"><img src="imagenes/6.png"/></a></li>
+ <li><a href="#" onclick="pulsado('7');"><img src="imagenes/7.png"/></a></li>
+ <li><a href="#" onclick="pulsado('8');"><img src="imagenes/8.png"/></a></li>
+ <li><a href="#" onclick="pulsado('9');"><img src="imagenes/9.png"/></a></li>  
+ <li><a href="#" onclick="pulsado('10');"><img src="imagenes/10.png"/></a></li>
+ <li><a href="#" onclick="pulsado('11');"><img src="imagenes/11.png"/></a></li>
+ <li><a href="#" onclick="pulsado('12');"><img src="imagenes/12.png"/></a></li>
+ <li><a href="#" onclick="pulsado('13');"><img src="imagenes/13.png"/></a></li>
+ <li><a href="#" onclick="pulsado('14');"><img src="imagenes/14.png"/></a></li>   
+ <li><a href="#" onclick="pulsado('15');"><img src="imagenes/15.png"/></a></li>
+ <li><a href="#" onclick="pulsado('16');"><img src="imagenes/16.png"/></a></li>
+ <li><a href="#" onclick="pulsado('17');"><img src="imagenes/17.png"/></a></li>
+ <li><a href="#" onclick="pulsado('18');"><img src="imagenes/18.png"/></a></li>
+ <li><a href="#" onclick="pulsado('19');"><img src="imagenes/19.png"/></a></li>   
+ <li><a href="#" onclick="pulsado('20');"><img src="imagenes/20.png"/></a></li>
+ <li><a href="#" onclick="pulsado('21');"><img src="imagenes/21.png"/></a></li>
+ <li><a href="#" onclick="pulsado('22');"><img src="imagenes/22.png"/></a></li>
+ <li><a href="#" onclick="pulsado('23');"><img src="imagenes/23.png"/></a></li>
+ <li><a href="#" onclick="pulsado('24');"><img src="imagenes/24.png"/></a></li>   
+ <li><a href="#" onclick="pulsado('25');"><img src="imagenes/25.png"/></a></li>
+ <li><a href="#" onclick="pulsado('26');"><img src="imagenes/26.png"/></a></li>
+ <li><a href="#" onclick="pulsado('27');"><img src="imagenes/27.png"/></a></li>
+ <li><a href="#" onclick="pulsado('28');"><img src="imagenes/28.png"/></a></li>
+ <li><a href="#" onclick="pulsado('29');"><img src="imagenes/29.png"/></a></li>   
+ <li><a href="#" onclick="pulsado('30');"><img src="imagenes/30.png"/></a></li>
+ <li><a href="#" onclick="pulsado('31');"><img src="imagenes/31.png"/></a></li>
+ <li><a href="#" onclick="pulsado('32');"><img src="imagenes/32.png"/></a></li>
+ <li><a href="#" onclick="pulsado('33');"><img src="imagenes/33.png"/></a></li>
+ <li><a href="#" onclick="pulsado('34');"><img src="imagenes/34.png"/></a></li>   
+ 
+</ul>
+
+ </div>     
+   <script type="text/javascript">
+            
+        </script> 
+   
+
+    
+    
+</body>
+</html>

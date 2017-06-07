@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title> Identificación </title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="identificar.css"/>
+<body>
+<div class="nav" id="navegador">
+<ul>
+<li><a href="javascript:window.history.back();">Volver</a></li>
+<li></li>
+<li class="ultimo"></li>
+</ul>
+</div>
+    <h2 id="titulo"> Identifiquese con su huella dactilar</h2></div>
+<div id="huella">
+    
+    <input type="button" value="" onclick="identificar();">
+</div>
+    
+    
+    <script type="text/javascript">    
+    function identificar() {
+        var URLactual = window.window.location.search.substring(1);
+                         
+                 var url = "hablar.html?"+ URLactual[0];
+                 window.location = url;
+            
+        
+    }
+    </script>
+        
+</body>
+    
+</html>

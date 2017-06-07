@@ -1,0 +1,159 @@
+
+
+.nav{
+    
+    
+   margin: auto;
+    width: 53.9em;
+    
+   
+
+}
+
+
+#feedback{
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    background-color: #0E7AA1;
+    padding: 1em;
+    border-style: double;
+    border-width: 8;
+    border-radius: 10px;
+    border-color:white;
+    text-align: center;
+    color: white;
+    font-family: helvetica;
+     font-size: 22;
+} 
+    
+
+
+#navegador ul{
+   margin-top:2em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   list-style-type: none;
+   text-align: center;
+   background-color:#0EA9E1;
+   border-top-left-radius:1em;
+   border-bottom-left-radius: 1em;
+   
+    border-left-style: groove;
+    border-left-color:#0F8CB9;
+
+}
+
+
+
+#navegador li{
+   display: inline;
+   text-align: center;
+   padding-right: 1em;
+   padding-left: 1em;
+   padding-top: 2em;
+   padding-bottom:2em;
+   border-left-style: groove;
+   border-left-width: thick;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-color:white;
+   
+}
+
+#navegador .ultimo{
+   
+    border-top-left-radius:0.5em;
+   border-bottom-left-radius: 0.5em;
+   
+    border-left-style: groove;
+    border-left-color:#0F8CB9;  
+    margin-left:3.5em;
+    margin-right: -4.5em;
+    background-image:url(imagenes/borde.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+   
+    
+    
+    
+}
+#navegador li a {
+   
+   margin-bottom:5em;
+   color: #666;
+   background-color: white;
+   border-style:solid;
+   border-color: #0D94C5;
+    font-size: 16;
+    border-radius: 10px;
+   padding:0.5em;
+    box-shadow: 10px 10px 5px #0E7AA1;
+    
+   text-decoration: none;
+}
+
+#navegador li :hover{
+ 
+    font-size: 16;
+    border-style:inset;
+  box-shadow: 0px 0px 0px #0E7AA1;
+   
+}
+
+
+#buscador{
+    
+    border-style:solid;
+    border-color: #0EA9E1;
+    border-width: thick;
+    padding:1em;
+     width: 30em;
+    background-color:white;
+    margin: auto;
+    margin-top:1em;
+    padding-bottom: 0em;
+    border-radius: 10px;
+    
+}
+
+#buscador ul{
+    overflow:hidden; overflow-y:scroll;
+    margin-left: -2em;
+    list-style-type: none;
+      overflow-y:scroll;
+    height:12em;
+    
+}
+#buscador li a img{
+  
+    border-radius:10px;
+  height: auto;
+    width: 100%;
+    margin-left: -1em;
+    box-shadow: 5px 5px 2.5px #0E7AA1;
+    margin-bottom: 1em;
+    
+    
+}
+#buscador li a img:hover{
+    
+  border-style:inset;
+  border-color:#0F8CB9;
+  box-shadow: 0px 0px 0px #0E7AA1;   
+}
+
+#logo{
+    
+    background-image:url(imagenes/footer.jpg);
+    background-repeat: no-repeat;
+    padding: 3.8em;
+    background-position: center;
+    background-size: contain;  
+}
+

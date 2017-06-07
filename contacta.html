@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+   <meta charset="utf-8">
+    <title> Contacta</title></head>
+    <link rel="stylesheet" type="text/css" href="contacta.css"/>
+    
+<body>
+<script type="text/javascript">    
+    function enviaEmail() {
+        var nombre = document.forms[0].nombre.value;
+        var email = document.forms[0].email.value;
+        var feedback = document.getElementById("Feedback");
+        
+        var URL = unescape("index.html");
+       
+        if (nombre.length !=0 && email.length !=0 && mensaje.length !=0){
+                    feedback.innerHTML="Enviado . . .";
+                    setTimeout(function(){feedback.innerHTML=". . ."}, 2000);
+                     setTimeout("redireccionarPagina()", 3000);  
+        }else{
+            
+            feedback.innerHTML="Revisa los datos";
+            
+        }
+    }
+    function redireccionarPagina() {
+            window.location = "javascript:window.history.back();";
+        }
+</script>
+
+    
+<div class="nav" id="navegador">
+<ul>
+<li><a href="javascript:window.history.back();">Volver</a></li>
+<li></li>
+<li class="ultimo"></li>
+</ul>
+</div>
+<form>
+<label>Dejanos tu nombre</label><br><br>
+<input type="text" id="nombre" name="nombre" value=""><br><br>
+<label >Dinos tu correo para contactar contigo</label><br><br>
+<input type="text" id="email" name="email" value=""><br><br>
+<label> Explicanos que ocurre: <br></label><br>
+<textarea rows="10" cols="50" id="mensaje" name="mensaje"> </textarea><br><br>
+<input type="button" value="Envia" onclick="enviaEmail();">
+    <label id="Feedback">&emsp;&emsp;&emsp;. . .</label>
+</form>
+    
+    
+    
+    
+</body>
+    
+</html>
